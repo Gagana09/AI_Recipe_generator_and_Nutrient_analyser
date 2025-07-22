@@ -47,6 +47,8 @@ npm start           # or yarn start
 Frontend runs on http://localhost:3000
 Backend (API) runs on http://localhost:5000
 
+---
+
 **2️⃣ Edemam API KEY setup**
 This project uses the Edamam API for recipe and nutrition data. To use this service, you must get your own API credentials.
 
@@ -65,6 +67,7 @@ API_KEY = "your_api_key_here"
 ```
 Replace the placeholders ("your_app_id_here" and "your_api_key_here") with your actual Edamam APP ID and API KEY.
 
+---
 **🧪 Example Use Case** 
 
 Enter ingredients you have (e.g., "tomato, rice, garlic")
