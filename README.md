@@ -2,6 +2,10 @@
 
 An intelligent meal recommendation system that generates personalized recipes based on available ingredients, dietary preferences, and time constraints. It also provides a detailed macronutrient and micronutrient breakdown using the Edamam API, ensuring that users can make healthy and informed food choices.
 
+<p align="center" style="margin-bottom: 0;">
+  <img src="README_images/Homepage.png" width="700"/>
+</p>
+
 **✨ Features**
 
 * 🔍 **Recipe Search** using FAISS for fast similarity-based retrieval.
@@ -52,5 +56,11 @@ The system:
 Retrieves best match using FAISS
 Or generates a new recipe using DistilGPT-2
 Returns a detailed recipe + nutritional breakdown
-
+ 
+ <p align="center" style="margin-bottom: 0;">
+  <img src="README_images/img2.png" width="700"/>
+</p>
+<p align="center" style="margin-bottom: 0;">
+  <img src="README_images/img3.png" width="700"/>
+</p>
 
