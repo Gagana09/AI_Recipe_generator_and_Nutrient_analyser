@@ -32,4 +32,25 @@ python -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
+```
+---
+**2️⃣ Frontend Setup (React)**
+```bash
+cd frontend
+npm install         # or yarn install
+npm start           # or yarn start
+```
+Frontend runs on http://localhost:3000
+Backend (API) runs on http://localhost:5000
+
+**🧪 Example Use Case** 
+
+Enter ingredients you have (e.g., "tomato, rice, garlic")
+Select dietary preference (e.g., vegan), course (e.g., main dish), and total cooking time
+The system:
+
+Retrieves best match using FAISS
+Or generates a new recipe using DistilGPT-2
+Returns a detailed recipe + nutritional breakdown
+
 
