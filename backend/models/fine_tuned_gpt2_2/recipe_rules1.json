@@ -1,0 +1,83 @@
+{
+    "Diet_Rules": {
+        "vegan": {
+            "allowed_ingredients": ["vegetables", "grains", "plant-based proteins","fruits","tofu","soy milk","almond milk"],
+            "disallowed_ingredients": ["meat", "eggs", "dairy"],
+            "instructions": "Ensure no animal-based products are included. Ensure no repetition of ingredients/instructions while generating."
+        },
+        "non-vegetarian": {
+            "allowed_ingredients": ["meat","fish", "eggs", "dairy", "vegetables","fruits"],
+            "disallowed_ingredients": [],
+            "instructions": "If the input ingredients doesn't include meat, add a meat option like 'chicken' or 'fish' or 'mutton' or 'prawn' or 'crab' automatically and provide recipe as per that. Ensure no repetition of ingredients/instructions while generating."
+        },
+        "vegetarian":
+        {
+            "allowed_ingredients": ["dairy","vegetables","fruits","grains","legumes"],
+            "dissallowed_ingredients":["eggs","meat"],
+            "instructions": "Ensure no eggs or meat are included when adding ingredients. Ensure no repetition of ingredients/instructions while generating."
+        },
+        "eggetarian":
+        {
+            "allowed_ingredients" : ["eggs","vegetables","fruits","dairy"],
+            "dissallowed_ingredients" : ["meat"],
+            "instructions": "Ensure eggs are included but no meat in ingredients when added. Ensure no repetition of ingredients/instructions while generating."
+        },
+        "sattvik":
+        {
+            "allowed_ingredients":["dairy","beans","legumes","green vegetables","grains"],
+            "dissallowed_ingredients":["garlic","onion","mushrooms","eggs","red lentils","meat","root vegetables","yeast"],
+             "instructions": "Avoid garlic, onion,mushroom,eggs,meat and root vegetables. Ensure sattvik compliance. Ensure no repetition of ingredients/instructions while generating."
+        },
+        "gluten free" :
+        {
+            "allowed_ingredients":["corn flour", "rice flour", "quinoa", "buckwheat", "millet"],
+            "dissallowed_ingredients":["maida","wheat","barley","malt","rye","bread","wheat flour"],
+            "instructions": "Ensure no gluten-based and wheat based ingredients are included. Ensure no repetition of ingredients/instructions while generating."
+        },
+
+        "keto": 
+        { 
+            "allowed_ingredients": ["meat, fish", "eggs", "butter", "ghee", "avocado", "cheese", "low-carb vegetables", "almond flour", "coconut flour", "nuts", "seeds", "cream", "full-fat yogurt", "herbs", "spices"],
+            "disallowed_ingredients": [ "sugar", "honey", "fruits (except berries)", "starchy vegetables (e.g., potatoes, sweet potatoes, corn)", "grains", "flour (except almond and coconut flour)", "processed foods with hidden carbs"],
+                "instructions": "Ensure the recipes are high in fat, moderate in protein, and low in carbohydrates. Avoid starchy and sugary ingredients. Use low-carb substitutes for traditional high-carb ingredients (e.g., almond or coconut flour instead of wheat flour). Ensure no repetition of ingredients/instructions while generating."
+            }
+        },
+
+        
+
+      
+  "Course_Rules": {
+    "appetizer": {
+      "instructions": "Appetizers should be light, flavorful, and often deep-fried or roasted, with a focus on vegetables, lentils, or chickpeas."
+    },
+    "Breakfast": {
+      "instructions": "Breakfast typically includes a variety of dishes such as oats with fruits, cereal, parathas, idlis, dosas, upma, or poha, often served with yogurt or chutneys."
+    },
+    "Main Course": {
+      "instructions": "The main course should be hearty, with curries, rice or roti, and possibly a side of dal or vegetables, incorporating rich spices and flavors."
+    },
+    "Juice": {
+      "instructions": "Juices should be refreshing and made with fresh fruits, vegetables, or a combination, and sometimes sweetened with honey or spices like black salt, doesn't use alcohol and preferably without any processed sugars"
+    },
+    "Side Dish": {
+      "instructions": "Side dishes complement the main course and can include vegetables, dals, chutneys, curries, stuffed masalas or raita, adding extra flavor and variety to the meal."
+    },
+    "Condiment":{
+        "instructions": "Condiments should be flavorful, tangy or spicy or sweet, and are used to enhance or balance the flavors of main dishes. Common condiments include jams, sauces, compotes etc."
+    },
+    "Snack": {
+        "instructions": "Snacks should be light, quick-to-make, and easy-to-eat items, often savory or mildly sweet. They are usually served as small portions and can include items like fritters, samosas, or namkeens."
+    },
+    "Cocktail": {
+        "instructions": "Cocktails are mixed alcoholic beverages designed to be refreshing and flavorful. They often include a base spirit, mixers, and garnishes like citrus slices, herbs, or spices."
+    },
+    "Beverages": {
+        "instructions": "Beverages include a variety of drinks, both hot and cold, mostly teas and coffees"
+    },
+    "Dessert": {
+        "instructions": "Desserts should be sweet, rich, or creamy and served as a conclusion to a meal. They can include items like cakes, puddings, halwa, or frozen treats like kulfi and ice cream."
+    }
+    
+  }
+}
+

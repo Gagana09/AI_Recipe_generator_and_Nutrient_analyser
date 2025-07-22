@@ -1,0 +1,153 @@
+.recipe-generator-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Styling */
+.header-image {
+  background-image: url("../assests/banner.jpg");
+  background-size: cover; /* Ensures the image covers the entire header */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 170px; /* Increase height for better visibility */
+  width: 100%; /* Ensures it covers the full width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Improves text readability */
+}
+
+
+.header-image h1 {
+  color: #f23d0b;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+/* Left Section Styling */
+.left-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Right Section Styling */
+.right-section {
+  flex: 2;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Input Field Styling */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px 15px;
+  padding-left: 40px;
+  font-size: 1rem;
+  border: 2px solid #ff6f3c;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(255, 111, 60, 0.2);
+}
+
+/* Focus Effect */
+.input-container input:focus {
+  border-color: #ff3c3c;
+  box-shadow: 4px 4px 12px rgba(255, 60, 60, 0.3);
+  transform: scale(1.02);
+}
+
+/* Animated Placeholder */
+.input-container input::placeholder {
+  color: #ff6f3c;
+  opacity: 0.8;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-container input:focus::placeholder {
+  opacity: 0.4;
+  transform: translateX(5px);
+}
+
+/* Input Icon */
+.input-container .input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #ff6f3c;
+}
+
+/* Button Styling */
+.left-section button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6f3c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.left-section button:hover {
+  background-color: #ff3c3c;
+  transform: scale(1.05);
+}
+
+/* Chatbot Icon */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6f3c;
+  color: white;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chatbot-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bounce Animation for Chatbot Icon */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
