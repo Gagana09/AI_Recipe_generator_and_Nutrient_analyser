@@ -308,8 +308,8 @@ def get_recipe_endpoint():
         return jsonify({"error": str(e)}), 500
     
 # Replace these with your actual API credentials
-APP_ID = '96021791'
-API_KEY = '732c5eb97098873bbb6de814aaabd3bd'
+APP_ID = 'your_api_key'
+API_KEY = 'your_api_id'
     
 def preprocess_ingredients(ingredient_list):
     """
